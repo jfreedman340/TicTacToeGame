@@ -9,6 +9,20 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
     * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
+
+   * I've observed that the Player class is an abstract class,
+   which cannot be accessed unless it's inherited by another
+   class. That makes sense, players are sentient and unique
+   individuals unlike the AI, at least for now!
+
+   * I'm not sure if I found the bug or not, but I noticed that
+   the minimax method in the Computer class has the statement
+   bestScore = Math.min(score, bestScore); in the else
+   statement, while the bestScore = Math.max(score, bestScore);
+   is in the first part of the IF statement. Is that why the
+   minimax algorithm is easily beatable?
+
+
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
